@@ -8,13 +8,12 @@
  * Author:            Razel Ahmed
  * Author URI:        https://razelahmed.com
  */
-
  if ( ! defined('ABSPATH') ) {
     exit;
  }
 
-   //  echo plugin_dir_url(__FILE__);
- // returning plugin path
+//  echo plugin_dir_url(__FILE__);
+// returning plugin path
 //  define('RALP_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 /**
@@ -24,14 +23,14 @@ class Ra_Related_Posts {
 
     // initializing the hook
     public function __construct() {
-        add_action('init', array( $this,'init') );
+        add_action('init', [$this,'init'] );
     }
 
     // Hook into the_content to append related posts
     public function init() {
         add_filter('the_content', [$this, 'display_related_posts']);
         // enqueue scripts
-        add_action('wp_enqueue_scripts', array($this, 'enqueue_frontend_styles'));
+        add_action('wp_enqueue_scripts', [ $this, 'enqueue_frontend_styles']);
     }
 
     // enqueue frontend css
