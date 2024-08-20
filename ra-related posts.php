@@ -98,7 +98,6 @@ class Ra_Related_Posts {
             'posts_per_page' => 5,
             'orderby'        => 'rand'
         ];
-
         return get_posts($args);
     }
 
