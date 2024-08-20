@@ -37,7 +37,7 @@ Twenty Twenty Four
 The related posts are fetched based on the categories of the current post. The plugin randomly selects up to 5 posts from the same categories.
 
 = Can I customize the appearance of the related posts? =
-Yes, you can customize the appearance by editing the `css/custom.css` file located within the plugin folder.
+Yes, you can customize the appearance by editing the `assets/css/custom.css` file located within the plugin folder.
 
 = Does this plugin work with custom post types? =
 This version of the plugin is designed to work with the default 'post' post type. Future versions may include support for custom post types.

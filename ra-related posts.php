@@ -12,10 +12,14 @@
  if ( ! defined('ABSPATH') ) {
     exit;
  }
-  //  echo plugin_dir_url(__FILE__);
- // returning plugin path
- define('RALP_PLUGIN_URL', plugin_dir_url(__FILE__));
 
+   //  echo plugin_dir_url(__FILE__);
+ // returning plugin path
+//  define('RALP_PLUGIN_URL', plugin_dir_url(__FILE__));
+
+/**
+ * Class of Ra_Related_Posts
+ */
 class Ra_Related_Posts {
 
     // initializing the hook
@@ -35,7 +39,7 @@ class Ra_Related_Posts {
         // Define the base URL for the plugin
         $plugin_url = plugin_dir_url(__FILE__);
         // Custom css
-        wp_enqueue_style('ra-latestpost-custom-css', $plugin_url . 'css/custom.css', array(), '1.0.0', 'all');
+        wp_enqueue_style('ra-latestpost-custom-css', $plugin_url . 'assets/css/custom.css', array(), '1.0.0', 'all');
     }
 
     // Function to append related posts to the post content
